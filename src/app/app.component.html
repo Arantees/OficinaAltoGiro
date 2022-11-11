@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img width="250" src="/assets/imagens/logo.png" alt=""></a>
@@ -13,10 +12,20 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/contato">Contatos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/servicos">Servicos</a>
-        </li>
-               
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviço
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/servicos/motor">Motor</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/servicos/suspensao">Suspensão</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/servicos/embreagem">Embreagem</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/servicos/revisao">Revisão</a></li>
+          </ul>
+        </li> 
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
